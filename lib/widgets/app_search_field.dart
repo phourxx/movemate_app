@@ -18,7 +18,7 @@ class AppSearchField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      autofocus: true,
+      autofocus: !readonly,
       onChanged: onChanged,
       readOnly: readonly,
       onTap: onTap,
