@@ -95,7 +95,7 @@ class DashboardView extends HookWidget {
               color: Theme.of(context).primaryColor,
             ),
             child: AppSearchField(
-              readonly: false,
+              readonly: true,
               onTap: ()=> Navigator.push(context, fadeInRoute((context) => const SearchView())),
             ),
           ),
